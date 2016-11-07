@@ -26,6 +26,10 @@
     </dependency>
 
     <!-- Additional bundles to be deployed by the MP -->
+    <dependency>
+      <groupId>org.nuxeo</groupId>
+      <artifactId>nuxeo-platform-lang-ext-incomplete</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
