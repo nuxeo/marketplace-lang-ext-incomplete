@@ -3,7 +3,8 @@
   <title>Nuxeo Platform Additional Languages</title>
   <description>
     <p>
-      You can install translations that are not at least 95% completed through this addon. Presently it includes:
+      You can install translations that are not at least 95% completed through
+      this addon. Presently it includes:
       <ul>
         <li>Arabic (ar_SA)</li>
         <li>Azerbaijani (az_AZ)</li>
@@ -27,6 +28,11 @@
         <li>Turkish (tr_TR)</li>
         <li>Vietnamese (vi_VN)</li>
       </ul>
+      If you want to add a new translation or provide help for a given language
+      please read
+      <a href="https://doc.nuxeo.com/nxdoc/how-to-translate-the-nuxeo-platform/">
+        https://doc.nuxeo.com/nxdoc/how-to-translate-the-nuxeo-platform/
+      </a>
     </p>
   </description>
   <vendor>Nuxeo</vendor>
