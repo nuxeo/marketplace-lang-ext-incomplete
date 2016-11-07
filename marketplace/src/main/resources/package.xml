@@ -1,38 +1,46 @@
 <!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
 <package type="addon" name="marketplace-lang-ext-incomplete" version="@VERSION@">
-  <title>Marketplace lang ext incomplete</title>
+  <title>Nuxeo Platform Additional Languages</title>
   <description>
-    <p>Put here an HTML description of your Nuxeo Package.</p>
+    <p>
+      You can install translations that are not at least 95% completed through this addon. Presently it includes:
+      <ul>
+        <li>Arabic (ar_SA)</li>
+        <li>Azerbaijani (az_AZ)</li>
+        <li>Catalan (ca_ES)</li>
+        <li>Czech (cs_CZ)</li>
+        <li>Greek (el_GR)</li>
+        <li>Spanish (es)</li>
+        <li>Spanish - Spain (es_ES)</li>
+        <li>Basque (eu_ES)</li>
+        <li>Galician (gl_ES)</li>
+        <li>Italian (it_IT)</li>
+        <li>Macedonian (mk_MK)</li>
+        <li>Polish (pl)</li>
+        <li>Polish - Poland (pl_PL)</li>
+        <li>Portuguese (pt)</li>
+        <li>Portuguese - Portugal (pt_PT)</li>
+        <li>Portuguese - Brazil (pt_BR)</li>
+        <li>Russian (ru)</li>
+        <li>Russian - Russia (ru_RU)</li>
+        <li>Serbian (Cyrillic) (sr_SP)</li>
+        <li>Turkish (tr_TR)</li>
+        <li>Vietnamese (vi_VN)</li>
+      </ul>
+    </p>
   </description>
-  <!-- <home-page>http://doc.nuxeo.com/</home-page> -->
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
-  <!-- <hotreload-support>false</hotreload-support> -->
-  <!-- <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance> -->
-  <!-- Nuxeo Validation: none | inprocess | primary_validation | nuxeo_certified -->
-  <nuxeo-validation>none</nuxeo-validation>
-  <!-- Production State: production_ready | testing | proto -->
-  <production-state>testing</production-state>
+  <hotreload-support>true</hotreload-support>
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
+  <production-state>production_ready</production-state>
   <supported>false</supported>
   <platforms>
-    <platform>cap-@DISTRIB_VERSION@</platform>
-    <platform>cap-@DISTRIB_VERSION@-HF*</platform>
+    <platform>server-@DISTRIB_VERSION@</platform>
+    <platform>server-@DISTRIB_VERSION@-HF*</platform>
   </platforms>
-  <!-- Dependencies on other packages -->
-  <!-- <dependencies> -->
-  <!-- <package>another-package:1.0.0:1.0.0</package> -->
-  <!-- </dependencies> -->
-  <!-- Conflicts with other packages -->
-  <!-- <conflicts> -->
-  <!-- <package>a-conflicting-package:1.0.0:1.0.0</package> -->
-  <!-- </conflicts> -->
-  <!-- Provides features of other packages -->
-  <!-- <provides> -->
-  <!-- <package>an-embedded-package:1.0.0:1.0.0</package> -->
-  <!-- </provides> -->
   <license>Apache License, Version 2.0</license>
   <license-url>http://www.apache.org/licenses/LICENSE-2.0</license-url>
-  <!-- Visibility: PRIVATE | MARKETPLACE | DEV | PUBLIC -->
-  <visibility>DEV</visibility>
+  <visibility>PUBLIC</visibility>
 </package>
