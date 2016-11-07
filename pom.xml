@@ -18,11 +18,20 @@
     <module>marketplace</module>
   </modules>
 
+  <profiles>
+    <profile>
+      <id>ftest</id>
+      <modules>
+        <module>ftest/webdriver</module>
+      </modules>
+    </profile>
+  </profiles>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.nuxeo.marketplace.lang</groupId>
-        <artifactId>marketplace-lang-ext-incomplete-package</artifactId>
+        <artifactId>marketplace-lang-ext-incomplete</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
       </dependency>

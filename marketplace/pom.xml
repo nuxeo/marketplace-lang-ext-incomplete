@@ -7,7 +7,7 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>marketplace-lang-ext-incomplete-package</artifactId>
+  <artifactId>marketplace-lang-ext-incomplete</artifactId>
   <packaging>zip</packaging>
   <name>Marketplace lang ext incomplete</name>
 
