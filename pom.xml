@@ -23,7 +23,8 @@
       <dependency>
         <groupId>org.nuxeo.marketplace.lang</groupId>
         <artifactId>marketplace-lang-ext-incomplete-package</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${project.version}</version>
+        <type>zip</type>
       </dependency>
     </dependencies>
   </dependencyManagement>
