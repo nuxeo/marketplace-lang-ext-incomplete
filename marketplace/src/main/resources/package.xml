@@ -1,37 +1,7 @@
 <!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
 <package type="addon" name="marketplace-lang-ext-incomplete" version="@VERSION@">
   <title>Nuxeo Platform Additional Languages</title>
-  <description>
-    <p>
-      You can install translations that are not at least 95% completed through
-      this addon. Presently it includes:
-      <ul>
-        <li>Arabic (ar_SA)</li>
-        <li>Azerbaijani (az_AZ)</li>
-        <li>Catalan (ca_ES)</li>
-        <li>Czech (cs_CZ)</li>
-        <li>Greek (el_GR)</li>
-        <li>Galician (gl_ES)</li>
-        <li>Italian (it_IT)</li>
-        <li>Macedonian (mk_MK)</li>
-        <li>Polish (pl)</li>
-        <li>Polish - Poland (pl_PL)</li>
-        <li>Portuguese (pt)</li>
-        <li>Portuguese - Portugal (pt_PT)</li>
-        <li>Portuguese - Brazil (pt_BR)</li>
-        <li>Russian (ru)</li>
-        <li>Russian - Russia (ru_RU)</li>
-        <li>Serbian (Cyrillic) (sr_SP)</li>
-        <li>Turkish (tr_TR)</li>
-        <li>Vietnamese (vi_VN)</li>
-      </ul>
-      If you want to add a new translation or provide help for a given language
-      please read
-      <a href="https://doc.nuxeo.com/nxdoc/how-to-translate-the-nuxeo-platform/">
-        https://doc.nuxeo.com/nxdoc/how-to-translate-the-nuxeo-platform/
-      </a>
-    </p>
-  </description>
+  <description>The Nuxeo Platform Additional Languages addon provides languages that were not sufficiently translated (95%) to be included in the default distribution of the Nuxeo Platform. <a href="https://doc.nuxeo.com/nxdoc/how-to-translate-the-nuxeo-platform/">More information about how to translate the Nuxeo Platform</a>.</description>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
