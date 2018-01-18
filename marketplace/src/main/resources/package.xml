@@ -8,7 +8,7 @@
   <hotreload-support>true</hotreload-support>
   <nuxeo-validation>nuxeo_certified</nuxeo-validation>
   <production-state>production_ready</production-state>
-  <supported>false</supported>
+  <supported>true</supported>
   <platforms>
     <platform>server-@DISTRIB_VERSION@</platform>
     <platform>server-@DISTRIB_VERSION@-*</platform>
