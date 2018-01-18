@@ -7,7 +7,7 @@
   <uninstaller restart="true" />
   <hotreload-support>true</hotreload-support>
   <nuxeo-validation>nuxeo_certified</nuxeo-validation>
-  <production-state>production_ready</production-state>
+  <production-state>testing</production-state>
   <supported>true</supported>
   <platforms>
     <platform>server-@DISTRIB_VERSION@</platform>
