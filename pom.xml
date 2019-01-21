@@ -8,7 +8,7 @@
 
   <groupId>org.nuxeo.marketplace.lang</groupId>
   <artifactId>marketplace-lang-ext-incomplete-parent</artifactId>
-  <version>1.2.3</version>
+  <version>1.2.4-SNAPSHOT</version>
   <name>Marketplace lang ext incomplete parent</name>
   <description>Marketplace package for the nuxeo-platform-lang-ext-incomplete addon</description>
   <packaging>pom</packaging>
