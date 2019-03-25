@@ -18,6 +18,8 @@
  */
 package org.nuxeo.lang.ext.incomplete.test;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.List;
 
 import org.junit.Test;
@@ -29,8 +31,6 @@ import org.nuxeo.functionaltests.pages.DocumentBasePage.UserNotConnectedExceptio
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
-import static org.junit.Assert.assertTrue;
 
 /**
  * @since 9.1
@@ -49,23 +49,20 @@ public class ITAdditionalLangTest extends AbstractTest {
         arm.end();
 
         Select select = new Select(driver.findElement(By.id("editUser:nxl_userpreferences_1:nxw_locale")));
-        List<WebElement> options = select.getOptions();
+        List<String> options = select.getOptions().stream().map(WebElement::getText).collect(toList());
 
         // check that some incomplete translations are listed here
-        assertTrue(checkOption("Azerbaijani", options));
-        assertTrue(checkOption("Basque", options));
-        assertTrue(checkOption("italiano", options));
+        assertContains(options, "azərbaycan (Azərbaycan)");
+        assertContains(options, "euskara (Espainia)");
+        assertContains(options, "italiano (Italia)");
 
         logout();
     }
 
-    protected boolean checkOption(String language, List<WebElement> options) {
-        for (WebElement option : options) {
-            if (option.getText().contains(language)) {
-                return true;
-            }
+    private void assertContains(List<String> list, String actual) {
+        if (!list.contains(actual)) {
+            throw new AssertionError("expected:<" + actual + "> to exist in:<" + list + ">");
         }
-        return false;
     }
 
 }
