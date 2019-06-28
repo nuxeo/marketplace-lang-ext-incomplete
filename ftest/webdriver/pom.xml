@@ -12,6 +12,17 @@
   <name>Lang Ext incomplete functional tests with WebDriver</name>
   <description>Lang Ext incomplete functional tests with WebDriver</description>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nuxeo.ecm.distribution</groupId>
+        <artifactId>nuxeo-marketplace-jsf-ui</artifactId>
+        <type>zip</type>
+        <version>${nuxeo.distribution.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
